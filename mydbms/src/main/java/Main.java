@@ -12,7 +12,7 @@ public class Main {
     
     public static void main(String[] args) {
         System.out.println("===========================================");
-        System.out.println("       SQL编译器实训系统");
+        System.out.println("    CSU数据库系统");
         System.out.println("===========================================");
         System.out.println("支持的SQL语句类型：");
         System.out.println("  - CREATE DATABASE / CREATE TABLE / CREATE USER");

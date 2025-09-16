@@ -1,0 +1,45 @@
+-- 数据库系统功能测试命令集
+-- 请逐行输入以下命令进行测试
+
+-- 1. 创建数据库
+CREATE DATABASE testdb;
+
+-- 2. 使用数据库
+USE DATABASE testdb;
+
+-- 3. 创建表
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT,
+    grade FLOAT
+);
+
+-- 4. 插入数据
+INSERT INTO students VALUES (1, 'Alice', 20, 85.5);
+INSERT INTO students VALUES (2, 'Bob', 21, 92.0);
+INSERT INTO students VALUES (3, 'Charlie', 19, 78.5);
+
+-- 5. 查询所有数据
+SELECT * FROM students;
+
+-- 6. 查询特定列
+SELECT name, age FROM students;
+
+-- 7. 条件查询
+SELECT * FROM students WHERE age > 19;
+
+-- 8. 删除特定记录
+DELETE FROM students WHERE age = 21;
+
+-- 9. 再次查询验证删除
+SELECT * FROM students;
+
+-- 10. 显示所有表
+SHOW TABLES;
+
+-- 11. 显示所有数据库
+SHOW DATABASES;
+
+-- 12. 退出
+QUIT;
